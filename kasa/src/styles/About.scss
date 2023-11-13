@@ -1,0 +1,35 @@
+.dropdownBox {
+	margin: 0 180px 0 180px;
+	border-radius: 5px;
+
+	.dropdownTitle {
+		background-color: #ff6060;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px, 20px, 10px, 15px;
+		border-radius: 5px;
+		margin-bottom: 10px;
+		padding: 0 20px 0 20px;
+
+		h2 {
+			color: #ffffff;
+			font-size: 24px;
+			font-weight: 500;
+			text-align: left;
+		}
+
+		i {
+			color: #ffffff;
+			font-size: 24px;
+		}
+	}
+
+	.dropdownContent {
+		padding: 0 20px 0 20px;
+		background-color: #f6f6f6;
+		p {
+			margin-top: 0;
+		}
+	}
+}

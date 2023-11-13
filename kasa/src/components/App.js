@@ -1,14 +1,16 @@
 import React from "react";
+import AppRoutes from "../AppRoutes";
 import Header from "./Header";
 import Footer from "./Footer";
-import "../styles/App.css";
+import "../styles/App.scss";
+import "../styles/Index.scss";
 
 function App() {
 	return (
 		<>
 			<Header />
 			<div className="App">
-				<p>Testing</p>
+				<AppRoutes />
 			</div>
 			<Footer />
 		</>

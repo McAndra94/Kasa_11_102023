@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	background: #ffffff;
+
+	.banner {
+		display: flex;
+		align-items: center;
+		max-height: 223px;
+		padding: 20px 100px;
+		img {
+			width: 100%;
+		}
+	}
+}

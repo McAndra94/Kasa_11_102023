@@ -1,0 +1,202 @@
+// All Lodging Cards
+.cardsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #f6f6f6;
+	overflow-y: auto;
+	max-height: 800px;
+	border-radius: 25px;
+	padding: 10px;
+	margin: 0 100px;
+
+	.card {
+		flex: 0 0 auto;
+		margin: 30px;
+		border-radius: 10px;
+		overflow: hidden;
+
+		.imgContainer {
+			position: relative;
+			width: 340px;
+			height: 340px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 10px;
+			}
+
+			.cardTitle {
+				position: absolute;
+				bottom: 10px;
+				left: 20px;
+				width: 300px;
+				height: 52px;
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 26px;
+				letter-spacing: 0em;
+				text-align: left;
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+// Individual Lodging Page
+.lodgment {
+	align-items: center;
+	padding: 0 100px;
+
+	.logImgSlider {
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+			border-radius: 25px;
+		}
+
+		.leftChevron,
+		.rightChevron {
+			position: absolute;
+			font-size: 70px;
+			color: #ffffff;
+			background-color: transparent;
+			transform: translateY(-50%);
+			top: 50%;
+			border: none;
+			cursor: pointer;
+		}
+		.leftChevron {
+			left: 25px;
+		}
+		.rightChevron {
+			right: 25px;
+		}
+	}
+
+	h1,
+	.logLocation,
+	.logDescription,
+	.hostName,
+	.logEquipments,
+	.tag {
+		color: #ff6060;
+	}
+
+	.logMain {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		h1 {
+			font-size: 36px;
+			font-weight: 500;
+			letter-spacing: 0em;
+			text-align: left;
+		}
+
+		.logLocation {
+			position: relative;
+			font-size: 18px;
+		}
+
+		.logHost {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+
+			.hostName {
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 26px;
+				letter-spacing: 0em;
+				width: 100px;
+				text-align: right;
+			}
+
+			img {
+				border-radius: 50%;
+				width: 64px;
+				height: 64px;
+				margin-left: 10px;
+				background-color: #c4c4c4;
+			}
+		}
+	}
+
+	.logSub {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.logTags {
+			.tag {
+				color: #ffffff;
+				background-color: #ff6060;
+				border-radius: 10px;
+				padding: 5px 20px;
+				margin-right: 10px;
+				font-size: 14px;
+			}
+		}
+
+		.logRating {
+			width: 196px;
+			height: 36px;
+
+			.star {
+				font-size: 20px;
+			}
+			.red {
+				color: #ff6060;
+			}
+			.gray {
+				color: #e3e3e3;
+			}
+		}
+	}
+}
+
+.dropdownList {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 180px 0 180px;
+	border-radius: 5px;
+
+	.dropdownTitle {
+		background-color: #ff6060;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px, 20px, 10px, 15px;
+		border-radius: 5px;
+		margin-bottom: 10px;
+		padding: 0 20px 0 20px;
+
+		h2 {
+			color: #ffffff;
+			font-size: 24px;
+			font-weight: 500;
+			text-align: left;
+		}
+
+		i {
+			color: #ffffff;
+			font-size: 24px;
+		}
+	}
+
+	.dropdownContent {
+		padding: 0 20px 0 20px;
+		background-color: #f6f6f6;
+		p {
+			margin-top: 0;
+		}
+	}
+}
