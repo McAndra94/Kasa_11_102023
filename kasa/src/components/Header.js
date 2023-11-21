@@ -1,7 +1,5 @@
-import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../images/Kasa.png";
-import "../styles/Header.scss";
 
 function Header() {
 	return (
@@ -14,12 +12,12 @@ function Header() {
 			<nav>
 				<ul>
 					<li>
-						<NavLink to="/home" activeClassName="active">
+						<NavLink to="/home" activeclassname="active">
 							Accueil
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/about" activeClassName="active">
+						<NavLink to="/about" activeclassname="active">
 							A Propos
 						</NavLink>
 					</li>

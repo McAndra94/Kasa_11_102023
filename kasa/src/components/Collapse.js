@@ -6,7 +6,7 @@ function Collapse({ title, content, isOpen, onClick }) {
 				{isOpen ? (
 					<i className="fa-solid fa-chevron-up"></i>
 				) : (
-					<i class="fa-solid fa-chevron-down"></i>
+					<i className="fa-solid fa-chevron-down"></i>
 				)}
 			</div>
 			{isOpen && (

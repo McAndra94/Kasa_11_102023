@@ -5,10 +5,8 @@ function Home() {
 	return (
 		<>
 			<div className="banner">
-				<img
-					src={Banner}
-					alt="Chez vous, partout et ailleur. Banner, Mountain Shore"
-				/>
+				<img src={Banner} alt="Banner, Mountain Shore" />
+				<div className="bannerText">Chez vous, partout et ailleur.</div>
 			</div>
 			<Cards />
 		</>
