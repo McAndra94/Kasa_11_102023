@@ -17,13 +17,18 @@ function Gallery({ pictures }) {
 
 	return (
 		<div className="logSlideShow">
-			<button onClick={handlePrev} className="leftChevron">
-				{"<"}
-			</button>
+			{/* If more than 1: show, if not don't */}
+			{pictures.length > 1 && (
+				<button onClick={handlePrev} className="leftChevron">
+					{"<"}
+				</button>
+			)}
 			<img src={pictures[currentImgIndex]} alt="Lodgment View" />
-			<button onClick={handleNext} className="rightChevron">
-				{">"}
-			</button>
+			{pictures.length > 1 && (
+				<button onClick={handleNext} className="rightChevron">
+					{">"}
+				</button>
+			)}
 		</div>
 	);
 }
