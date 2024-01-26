@@ -6,7 +6,7 @@ import Lodgments from "../data/logements.json";
 
 function Lodgment() {
 	const { id } = useParams();
-	// lodging current value, setLodging for updating the lodging
+	// lodging current value, setLodging for updating lodging
 	const [lodging, setLodging] = useState(null);
 	const [openCollapse, setOpenCollapse] = useState(null);
 	const navigate = useNavigate();

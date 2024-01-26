@@ -1,7 +1,16 @@
-function Collapse({ title, content, isOpen, onClick }) {
+import React, { useState } from "react";
+
+function Collapse({ title, content, onClick }) {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const handleToggle = () => {
+		setIsOpen(!isOpen);
+		if (onClick) onClick();
+	};
+
 	return (
 		<div className="dropdownBox">
-			<div className="dropdownTitle" onClick={onClick}>
+			<div className="dropdownTitle" onClick={handleToggle}>
 				<h2>{title}</h2>
 				{isOpen ? (
 					<i className="fa-solid fa-chevron-up"></i>
